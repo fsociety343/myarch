@@ -1,0 +1,336 @@
+;;; Configured by owl4ce
+
+[colors]
+background = #de141821
+foreground = #ffffff
+foreground-alt = #47525a
+
+;; Colors Pallete
+red = #dc143c
+green = #05c46b
+blue = #3498db
+cyan = #00c7eb
+violet = #8e44ad
+yellow = #eef10f
+
+;; BAR
+[bar/top]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 26
+background = ${colors.background}
+foreground = ${colors.foreground}
+;offset-x = 1%
+;offset-y = 1%
+;radius = 4.0
+fixed-center = true
+;bottom = true
+;border-size = 6
+;border-color = #00000000
+;padding-left = 2
+;padding-right = 2
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = M+ 1m:style=Regular:size=8;2
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;2
+font-2 = FontAwesome5Free:style=Solid:size=9;2
+font-3 = FontAwesome5Free:style=Regular:size=9;2
+font-4 = FontAwesome5Brands:style=Regular:size=10;2
+
+modules-left = button ewmh mpd
+modules-center = temperature alsa backlight cpu memory filesystem battery
+modules-right = eth wlan date powermenu
+
+tray-position = right
+tray-padding = 1
+;tray-detached = true
+;tray-offset-x = -435
+;tray-maxsize = 16
+tray-background = #de42545e
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/button]
+type = custom/text
+content = " SEARCH"
+content-background = ${colors.blue}
+content-padding = 2
+click-left = rofi -show drun
+click-middle = thunar
+click-right = networkmanager_dmenu
+
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+
+format = <label-state>
+label-monitor = %name%
+label-active = %name%
+label-active-padding = 1
+label-active-background = ${colors.foreground-alt}
+
+label-urgent = 
+;label-urgent-padding = 1
+label-urgent-background = ${colors.violet} 
+
+label-empty = 
+;label-empty-padding = 1
+label-empty-background = ${colors.background}
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+
+format-online = <toggle> <label-song>
+format-online-padding = 2
+
+icon-foreground = ${colors.foreground-alt}
+icon-prev = 
+icon-prev-foreground = ${colors.foreground-alt}
+icon-play = 
+icon-pause = 
+icon-next = 
+icon-next-foreground = ${colors.foreground-alt}
+
+label-song = " %artist% - %title%"
+label-song-maxlen = 60
+label-song-ellipsis = true
+
+[module/alsa]
+type = internal/alsa
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 1
+format-muted-prefix = 
+format-muted-foreground = ${colors.foreground-alt}
+format-muted-padding = 1
+label-volume = %percentage%%
+label-muted = " MUTED"
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground-alt}
+ramp-headphones = 
+ramp-headphones-foreground = ${colors.foreground-alt}
+
+bar-volume-width = 7
+bar-volume-foreground-0 = ${colors.green}
+bar-volume-foreground-1 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.green}
+bar-volume-foreground-5 = ${colors.yellow}
+bar-volume-foreground-6 = ${colors.red}
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight]
+type = internal/backlight
+card = radeon_bl0
+
+format = <label>
+format-padding = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+label = "%percentage%%"
+
+bar-width = 7
+bar-foreground-0 = #0be881
+bar-foreground-1 = #0be881
+bar-foreground-2 = #0be881
+bar-foreground-3 = #fff200
+bar-foreground-4 = #fff200
+bar-foreground-5 = #dc143c
+bar-foreground-6 = #dc143c
+bar-gradient = false
+bar-indicator = 
+bar-fill = ─
+bar-empty = ─
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${colors.violet}
+format-connected-padding = 2
+
+label-connected = " %essid%"
+label-connected-foreground = ${colors.foreground}
+
+format-disconnected =
+
+[module/eth]
+type = internal/network
+interface = ether0
+interval = 3.0
+
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${colors.violet}
+format-connected-padding = 2
+
+label-connected = " %local_ip%"
+
+format-disconnected =
+
+[module/temperature]
+type = internal/temperature
+interval = 2
+thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:01.0/hwmon/hwmon5/temp1_input
+base-temperature = 45
+warn-temperature = 65
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+format-padding = 1
+format-warn-padding = 1
+
+label = %temperature-c%
+label-warn = %temperature-c%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+ramp-foreground = ${colors.foreground-alt}
+ramp-2-foreground = ${colors.red}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+
+format = <label>
+format-padding = 1
+format-prefix = ""
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = " %percentage%%"
+
+[module/memory]
+type = internal/memory
+interval = 3
+
+format-padding = 1
+format-prefix = ""
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = " %percentage_used%%"
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+fixed-values = true
+interval = 60
+
+format-mounted =  <label-mounted>
+format-mounted-padding = 1
+format-mounted-foreground = ${colors.foreground-alt}
+
+label-mounted = %percentage_used%%
+label-mounted-foreground = ${colors.foreground}
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 100
+
+format-charging = <animation-charging> <label-charging>
+format-charging-padding = 1
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-padding = 1
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 500
+
+animation-charging-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = "%A "
+date-alt = "%A, %d %B %Y "
+
+time = "%R"
+time-alt = "%R"
+
+label = %date% %time%
+label-padding = 1
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = ${colors.foreground}
+label-open-background = ${colors.red}
+label-open-padding = 2
+label-open-margin-left = 1
+label-close = 
+label-close-foreground = ${colors.cyan}
+label-close-margin-left = 1
+label-separator = "|"
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = 
+menu-0-0-exec = menu-open-1
+menu-0-0-foreground = ${colors.green}
+
+menu-0-1 = 
+menu-0-1-exec = menu-open-2
+menu-0-1-foreground = ${colors.red}
+menu-0-1-margin-right = 2
+
+menu-1-0 =  Reboot?
+menu-1-0-exec = reboot
+menu-1-0-foreground = ${colors.green}
+menu-1-0-margin-right = 2
+
+menu-2-0 =  Shutdown?
+menu-2-0-exec = poweroff
+menu-2-0-foreground = ${colors.red}
+menu-2-0-margin-right = 2
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = true
+
+[global/wm]
+;margin-top = 5
+;margin-bottom = 5
+
+; vim:ft=dosini
