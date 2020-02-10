@@ -1,8 +1,0 @@
-[Desktop Entry]
-Comment=Play music on NCMPCPP with album art
-Terminal=false
-Name=NCMPCPP Album Art
-Categories=AudioVideo;Audio;Player;
-Exec=/opt/ncmpcpp-album/ncmpcpp-album
-Type=Application
-Icon=/opt/ncmpcpp-album/mp.png

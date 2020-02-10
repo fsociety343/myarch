@@ -1,3 +1,0 @@
-#!/bin/bash
-urxvt -g 77x14 -e ncmpcpp -c ~/.ncmpcpp/config-album
-exit 0
