@@ -74,7 +74,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Fantasque Sans Mono</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -83,7 +83,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Cantarell</name>
+      <name>Fantasque Sans Mono</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -162,17 +162,17 @@
     <!-- Volume control -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>bash -c 'pamixer -i 5; notify-send -u low "Audio Volume `pamixer --get-volume-human`"'</command>
+        <command>pamixer -i 5</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>bash -c 'pamixer -d 5; notify-send -u low "Audio Volume `pamixer --get-volume-human`"'</command>
+        <command>pamixer -d 5</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>bash -c 'pamixer -t;notify-send -u low "Audio Volume `pamixer --get-volume-human`"'</command>
+        <command>pamixer -t</command>
       </action>
     </keybind>
     <!-- Audio control for NCMPCPP -->
@@ -769,7 +769,10 @@
     <application class="Geany" type="normal">
       <maximized>true</maximized>
     </application>
-    <application class="Atom" type="normal">
+    <application class="code-oss" type="normal">
+      <maximized>true</maximized>
+    </application>
+    <application class="kdenlive" type="normal">
       <maximized>true</maximized>
     </application>
     <application class="Gimp-2.10" type="normal">

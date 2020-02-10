@@ -5,15 +5,16 @@
 #
 
 # Load X Resources
-xrdb ~/.Xresources &
+xrdb ~/.Xresources
 
 # Background Handler
 nitrogen --restore &
 
 # Compositor
-compton --blur-method kawase --blur-strength 4 &
+compton --blur-method kawase --blur-strength 3 &
 
 # Panel/Taskbar
+plank &
 polybar top -r &
 
 # Notification
@@ -26,11 +27,12 @@ xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Lock Screen Handler
-xss-lock -- /usr/bin/slimlock &
+#xss-lock -- /usr/bin/slimlock &
 
 # Tray/Applets
 clipit &
-blueman-applet &
+#nm-applet &
+#blueman-applet &
 
 # Others
 mpd

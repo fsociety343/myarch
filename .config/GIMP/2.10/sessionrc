@@ -11,8 +11,8 @@
     (size 620 200))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 60 70)
-    (size 1246 689)
+    (position 20 46)
+    (size 1326 689)
     (open-on-exit)
     (aux-info
         (left-docks-width "64")
@@ -23,12 +23,12 @@
     (gimp-dock
         (side right)
         (book
-            (current-page 0)
+            (current-page 2)
             (dockable "gimp-color-editor"
                 (locked)
                 (tab-style automatic)
                 (aux-info
-                    (current-page "GimpColorSelect")))
+                    (current-page "GimpColorScales")))
             (dockable "gimp-histogram-editor"
                 (locked)
                 (tab-style automatic))
@@ -43,7 +43,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 364)
+            (position 358)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (locked)
@@ -87,7 +87,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
     (position 290 26)
-    (size 717 729))
+    (size 724 729))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
     (position 51 24))
@@ -105,15 +105,19 @@
     (position 887 181))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 826 31))
+    (position 943 180))
 (session-info "toplevel"
     (factory-entry "gimp-offset-tool-dialog")
     (position 467 238))
+(session-info "toplevel"
+    (factory-entry "gimp-action-search-dialog")
+    (position 600 369)
+    (size 166 30))
 
 (hide-docks no)
 (single-window-mode yes)
 (show-tabs yes)
 (tabs-position 0)
-(last-tip-shown 0)
+(last-tip-shown 3)
 
 # end of sessionrc

@@ -1,0 +1,36 @@
+Height 768=484
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAGxAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Width 1366=640
+
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+Height 768=672
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAApcAAAKgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=663
+Window-Maximized 768x1366=true
+
+[Recent Files]
+File1[$e]=/media/ryk/AllData/COMPUTER/Guide/MikroTik Networking/Mikrotik.ID _ Manajemen Bandwidth Menggunakan Simple Queue.pdf
+File10[$e]=/media/ryk/AllData/COMPUTER/Guide/174408-ID-remastering-distro-ubuntu-untuk-menunjan.pdf
+File2[$e]=/media/ryk/AllData/HISTORY OF SCHOOL TIME/HARRY KURNIAWAN/SMKN 2 KUDUS/XII/ASJ/Jobsheet VPN.pdf
+File3[$e]=/media/ryk/AllData/COMPUTER/Guide/MikroTik Networking/MIKHMON -MikroTik Hotspot Monitor-.pdf
+File4[$e]=/media/ryk/AllData/HISTORY OF SCHOOL TIME/HARRY KURNIAWAN/SMKN 2 KUDUS/XII/ASJ/QUIZ 1-UHASJXII Administrasi Sistem Jaringan.pdf
+File5[$e]=/media/ryk/AllData/HISTORY OF SCHOOL TIME/HARRY KURNIAWAN/SMKN 2 KUDUS/XII/ASJ/Instalasi dan Konfigurasi SNMP dan MRTG.pdf
+File6[$e]=/media/ryk/AllData/COMPUTER/Linux Enthusiast/All Guide/Ricing Guide/Cheatsheet _ Font Awesome - Solid.pdf
+File7[$e]=/media/ryk/AllData/COMPUTER/Linux Enthusiast/All Guide/Ricing Guide/Cheatsheet _ Font Awesome - Brands.pdf
+File8[$e]=/media/ryk/AllData/HISTORY OF SCHOOL TIME/HARRY KURNIAWAN/SMKN 2 KUDUS/XII/ASJ/QUIZ 2-UHASJXII Administrasi Sistem Jaringan.pdf
+File9[$e]=/media/ryk/AllData/COMPUTER/Guide/Materi Jaringan Komputer BLK r2.pdf
+Name1[$e]=Mikrotik.ID _ Manajemen Bandwidth Menggunakan Simple Queue.pdf
+Name10[$e]=174408-ID-remastering-distro-ubuntu-untuk-menunjan.pdf
+Name2[$e]=Jobsheet VPN.pdf
+Name3[$e]=MIKHMON -MikroTik Hotspot Monitor-.pdf
+Name4[$e]=QUIZ 1-UHASJXII Administrasi Sistem Jaringan.pdf
+Name5[$e]=Instalasi dan Konfigurasi SNMP dan MRTG.pdf
+Name6[$e]=Cheatsheet _ Font Awesome - Solid.pdf
+Name7[$e]=Cheatsheet _ Font Awesome - Brands.pdf
+Name8[$e]=QUIZ 2-UHASJXII Administrasi Sistem Jaringan.pdf
+Name9[$e]=Materi Jaringan Komputer BLK r2.pdf

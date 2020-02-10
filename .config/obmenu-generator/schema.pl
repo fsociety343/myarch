@@ -31,10 +31,10 @@ our $SCHEMA = [
 
 	{sep => 'DESKTOP MENU'},
     
-    #          COMMAND                 LABEL              ICON
-    {item => ['urxvt',             'Terminal',         'utilities-terminal']},
-    {item => ['thunar',            'File Manager',     'system-file-manager']},
-    {item => ['xdg-open https://', 'Web Browser',      'web-browser']},
+    #          COMMAND                                     LABEL                ICON
+    {item => ['exo-open --launch TerminalEmulator',       'Terminal',         'utilities-terminal']},
+    {item => ['exo-open --launch FileManager',            'File Manager',     'system-file-manager']},
+    {item => ['exo-open --launch WebBrowser',             'Web Browser',      'web-browser']},
 
     {sep => 'CATEGORIES'},
 
@@ -102,8 +102,8 @@ our $SCHEMA = [
     ## Lock
     {beg  => ["Lockscreen", "system-lock-screen"]},
     
-    {item => ['slimlock', 'Lock', 'system-lock-screen']},
-    {item => ['i3lock-fancy -f reckoner', 'Fancy Lock', 'system-lock-screen']},
+    {item => ['slimlock', 'SLiM Lock', 'system-lock-screen']},
+    {item => ['i3lock-fancy -f reckoner', 'i3 Lock Fancy', 'system-lock-screen']},
     
     {end  => undef},
     

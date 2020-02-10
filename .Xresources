@@ -22,7 +22,7 @@ URxvt.tabbedex.new-button:        false
 URXvt.tabbedex.reopen-on-close:   yes
 URxvt.tabbedex.autohide:          true
 URxvt.tabbedex.tabbar-fg:         1
-URxvt.tabbedex.tabbar-bg:         1
+URxvt.tabbedex.tabbar-bg:         0
 URxvt.tabbedex.tab-fg:            7
 URxvt.tabbedex.tab-bg:            1
 URxvt.keysym.Control-Shift-T:     perl:tabbedex:new_tab
@@ -53,15 +53,15 @@ URxvt.urlButton:                  1
 *.color8: #1c2127
 
 !*! RED
-*.color1: #dc143c
-*.color9: #f11843
+*.color1: #ec0050
+*.color9: #e91e63
 
 !*! GREEN
 *.color2: #05c46b
 *.color10: #1bCe7b
 
 !*! YELLOW
-*.color3: #eef10f
+*.color3: #ebdc09
 *.color11: #f6f93f
 
 !*! BLUE
@@ -91,9 +91,9 @@ rofi.display-window:              Running Apps
 
 !-! Color                         'bg'   'fg'    'bgalt'  'hlbg' 'hlfg'
 rofi.color-window:                #141821,#141821,#141821
-rofi.color-normal:                #141821,#ffffff,#141821,#dc143c,#ffffff
-rofi.color-active:                #141821,#3498db,#141821,#141821,#dc143c
-rofi.color-urgent:                #141821,#8e44ad,#141821,#141821,#dc143c
+rofi.color-normal:                #141821,#ffffff,#141821,#ec0050,#ffffff
+rofi.color-active:                #141821,#3498db,#141821,#141821,#ec0050
+rofi.color-urgent:                #141821,#8e44ad,#141821,#141821,#ec0050
 
 !-! Appearance
 rofi.sidebar-mode:                true
@@ -111,5 +111,4 @@ rofi.line-margin:                 2
 rofi.separator-style:             solid
 rofi.hide-scrollbar:              true
 rofi.markup-rows:                 false
-rofi.scrollbar-width:             8
 rofi.disable-history:             true

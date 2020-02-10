@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="a25b6a2c27cccee17def1367a38a7956">
+  <resource identifier="gimp-palette-color-history" checksum="84779c5427042c5302f6e228e57a78e2">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1447,13 +1447,25 @@
   <resource identifier="Cantarell" checksum="(null)">
   </resource>
 
+  <resource identifier="Cantarell" checksum="(null)">
+  </resource>
+
   <resource identifier="Cantarell Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Cantarell Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Cantarell Light" checksum="(null)">
+  </resource>
+
   <resource identifier="Cantarell Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
@@ -1864,6 +1876,9 @@
   <resource identifier="Monospace Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="mtx" checksum="(null)">
+  </resource>
+
   <resource identifier="MUTT ClearlyU Alternate Glyphs Wide" checksum="(null)">
   </resource>
 
@@ -2026,6 +2041,9 @@
   <resource identifier="Roboto Mono Thin for Powerline weight=250 Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="San Francisco Display" checksum="(null)">
+  </resource>
+
   <resource identifier="Sans-serif" checksum="(null)">
   </resource>
 
@@ -2102,6 +2120,9 @@
   </resource>
 
   <resource identifier="Serto Urhoy Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="SFNS Display" checksum="(null)">
   </resource>
 
   <resource identifier="Siji" checksum="(null)">
@@ -2399,6 +2420,15 @@
   </resource>
 
   <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="WenQuanYi Zen Hei Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="WenQuanYi Zen Hei Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="WenQuanYi Zen Hei Sharp Medium" checksum="(null)">
   </resource>
 
   <resource identifier="xos4 Terminess Powerline" checksum="(null)">

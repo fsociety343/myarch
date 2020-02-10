@@ -2,8 +2,7 @@
 
 (foreground (color-rgb 1 1 1))
 (palette "Default")
-(font "Nikoleta")
-(font-size 50)
-(justify center)
+(font "M+ 1m")
+(font-size 20)
 
 # end of gimp-text-tool options

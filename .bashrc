@@ -7,4 +7,5 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h: \W]\$ '
-export QT_QPA_PLATFORMTHEME=gtk2
+
+export QT_QPA_PLATFORMTHEME=qt5ct
