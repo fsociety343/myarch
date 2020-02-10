@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding='UTF-8'?><root>
+<gpick type="dynv">
+<color_names type="dynv">
+<imprecision_postfix type="bool">true</imprecision_postfix>
+<tool_color_naming type="string">tool_specific</tool_color_naming>
+</color_names>
+<converters type="dynv">
+<window type="dynv">
+<height type="int32">162</height>
+<width type="int32">266</width>
+</window>
+</converters>
+<generate_scheme type="dynv">
+<hsv_shift type="float" list="true"><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li><li>0</li></hsv_shift>
+<hue type="float">356.818</hue>
+<lightness type="float">23.3333</lightness>
+<saturation type="float">97.0588</saturation>
+<type type="int32">0</type>
+<wheel_locked type="bool">true</wheel_locked>
+<wheel_type type="int32">0</wheel_type>
+</generate_scheme>
+<layout_preview type="dynv">
+<css_selectors type="dynv">
+<assignments type="dynv">
+<content_b type="dynv">
+<color type="color">0.6 0.6 0.6 0</color>
+</content_b>
+<content_t type="dynv">
+<color type="color">0.1 0.1 0.1 2.34017e-43</color>
+</content_t>
+<footer_b type="dynv">
+<color type="color">0.1 0.1 0.1 5.46506e-43</color>
+</footer_b>
+<header_b type="dynv">
+<color type="color">0.2 0.2 0.2 5.66125e-43</color>
+</header_b>
+<header_t type="dynv">
+<color type="color">1 1 1 0</color>
+</header_t>
+<item1 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item1>
+<item10 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item10>
+<item10_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item10_text>
+<item11 type="dynv">
+<color type="color">0.8 0.8 0.8 1.4013e-45</color>
+</item11>
+<item11_text type="dynv">
+<color type="color">0.2 0.2 0.2 1.96618e-19</color>
+</item11_text>
+<item12 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item12>
+<item12_text type="dynv">
+<color type="color">0.2 0.2 0.2 3.07739e-41</color>
+</item12_text>
+<item1_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item1_text>
+<item2 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item2>
+<item2_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item2_text>
+<item3 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item3>
+<item3_text type="dynv">
+<color type="color">0.2 0.2 0.2 3.07739e-41</color>
+</item3_text>
+<item4 type="dynv">
+<color type="color">0.8 0.8 0.8 5.29691e-43</color>
+</item4>
+<item4_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item4_text>
+<item5 type="dynv">
+<color type="color">0.8 0.8 0.8 3.07739e-41</color>
+</item5>
+<item5_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item5_text>
+<item6 type="dynv">
+<color type="color">0.8 0.8 0.8 -0.0142052</color>
+</item6>
+<item6_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item6_text>
+<item7 type="dynv">
+<color type="color">0.8 0.8 0.8 3.07739e-41</color>
+</item7>
+<item7_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item7_text>
+<item8 type="dynv">
+<color type="color">0.8 0.8 0.8 3.07739e-41</color>
+</item8>
+<item8_text type="dynv">
+<color type="color">0.2 0.2 0.2 0</color>
+</item8_text>
+<item9 type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</item9>
+<item9_text type="dynv">
+<color type="color">0.2 0.2 0.2 3.07739e-41</color>
+</item9_text>
+<menu_b type="dynv">
+<color type="color">0.7 0.7 0.7 4.58127e-41</color>
+</menu_b>
+<navitem_b type="dynv">
+<color type="color">0.3 0.3 0.3 0</color>
+</navitem_b>
+<navitem_bh type="dynv">
+<color type="color">0.3 0.3 0.3 0</color>
+</navitem_bh>
+<navitem_t type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</navitem_t>
+<navitem_th type="dynv">
+<color type="color">0.8 0.8 0.8 0</color>
+</navitem_th>
+<sidebar_b type="dynv">
+<color type="color">0.7 0.7 0.7 4.58351e-41</color>
+</sidebar_b>
+</assignments>
+</css_selectors>
+<layout_name type="string">std_layout_grid_1</layout_name>
+</layout_preview>
+<main type="dynv">
+<close_to_tray type="bool">false</close_to_tray>
+<color_source type="string">color_picker</color_source>
+<dragging_moves type="bool">true</dragging_moves>
+<minimize_to_tray type="bool">false</minimize_to_tray>
+<paned_position type="int32">410</paned_position>
+<save_restore_palette type="bool">true</save_restore_palette>
+<secondary_color_source type="string"></secondary_color_source>
+<single_instance type="bool">false</single_instance>
+<start_in_tray type="bool">false</start_in_tray>
+<vertical_paned_position type="int32">0</vertical_paned_position>
+<window type="dynv">
+<height type="int32">447</height>
+<width type="int32">683</width>
+<x type="int32">174</x>
+<y type="int32">129</y>
+</window>
+</main>
+<options type="dynv">
+<hex_case type="string">lower</hex_case>
+<window type="dynv">
+<height type="int32">510</height>
+<width type="int32">389</width>
+</window>
+</options>
+<picker type="dynv">
+<color_space type="dynv">
+<cmyk type="bool">true</cmyk>
+<hsl type="bool">true</hsl>
+<hsv type="bool">true</hsv>
+<lab type="bool">true</lab>
+<lch type="bool">true</lch>
+<rgb type="bool">true</rgb>
+</color_space>
+<contrast type="dynv">
+<color type="color">1 1 1 1.27518e-43</color>
+</contrast>
+<expander type="dynv">
+<cmyk type="bool">false</cmyk>
+<hsl type="bool">false</hsl>
+<hsv type="bool">false</hsv>
+<info type="bool">false</info>
+<lab type="bool">false</lab>
+<lch type="bool">false</lch>
+<rgb type="bool">false</rgb>
+<settings type="bool">false</settings>
+</expander>
+<lab type="dynv">
+<illuminant type="string">D50</illuminant>
+<observer type="string">2</observer>
+</lab>
+<out_of_gamut_mask type="bool">true</out_of_gamut_mask>
+<refresh_rate type="float">30</refresh_rate>
+<sampler type="dynv">
+<add_on_release type="bool">true</add_on_release>
+<add_to_palette type="bool">true</add_to_palette>
+<copy_on_release type="bool">true</copy_on_release>
+<copy_to_clipboard type="bool">false</copy_to_clipboard>
+<falloff type="int32">0</falloff>
+<oversample type="int32">0</oversample>
+<rotate_swatch_after_sample type="bool">false</rotate_swatch_after_sample>
+</sampler>
+<swatch type="dynv">
+<active_color type="int32">2</active_color>
+<color1 type="color">0.862745 0.74902 0.866667 4.56501e-41</color1>
+<color2 type="color">0.258824 0.384314 0.670588 4.57902e-41</color2>
+<color3 type="color">0.470588 0.494118 0.721569 4.56501e-41</color3>
+<color4 type="color">0.815686 0.517647 0.709804 4.56501e-41</color4>
+<color5 type="color">0.862745 0.807843 0.905882 4.56501e-41</color5>
+<color6 type="color">0.898039 0.811765 0.901961 4.56501e-41</color6>
+</swatch>
+<zoom type="float">20</zoom>
+<zoom_size type="int32">150</zoom_size>
+</picker>
+<recent type="dynv">
+</recent>
+<tools type="dynv">
+<color_space_sampler type="dynv">
+<axis0 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis0>
+<axis1 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis1>
+<axis2 type="dynv">
+<max_value type="float">1</max_value>
+<min_value type="float">0</min_value>
+<samples type="int32">12</samples>
+</axis2>
+<color_space type="int32">0</color_space>
+<linearization type="bool">false</linearization>
+<show_preview type="bool">true</show_preview>
+<window type="dynv">
+<height type="int32">303</height>
+<width type="int32">347</width>
+</window>
+</color_space_sampler>
+<palette_from_image type="dynv">
+<colors type="int32">3</colors>
+<current_folder type="string">/home/ryk</current_folder>
+<filter type="string">all_images</filter>
+<show_preview type="bool">true</show_preview>
+<window type="dynv">
+<height type="int32">240</height>
+<width type="int32">190</width>
+</window>
+</palette_from_image>
+</tools>
+</gpick>
+</root>

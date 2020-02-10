@@ -1,0 +1,53 @@
+# Configured by owl4ce
+
+[mpd]
+mpd_music_dir =                 "~/Music"
+mpd_host =                      "localhost"
+mpd_port =                      "6600"
+mpd_crossfade_time =            "2"
+
+[visualizer]
+visualizer_fifo_path =          "/tmp/mpd.fifo"
+visualizer_in_stereo =          "no"
+visualizer_type =               "wave"
+visualizer_output_name =        "FIFO Visualizer"
+visualizer_look =               "●┃"
+visualizer_color =              "red"
+
+[header]
+header_visibility =             "no"
+header_window_color =           "default"
+playlist_shorten_total_times =  "yes"
+volume_color =                  "default"
+state_line_color =              "black"
+
+[playlist]
+playlist_display_mode =         "classic"
+song_list_format = 		"                       {%a - %t}|{%f}{$R   %l}"
+now_playing_prefix =            "$/b$2"
+now_playing_suffix =            "$/b$9"
+
+[statusbar]
+progressbar_look =              "─╼"
+progressbar_elapsed_color =     "green"
+progressbar_color =             "black"
+statusbar_visibility =          "no"
+statusbar_color =               "default"
+song_status_format =            "{%a{ - %t}}|{ - %f}{ - %b{ (%y)}}"
+
+[library]
+song_library_format =           "{%a - %t}|{%f}{$R%l}"
+empty_tag_color =               "red"
+
+[global]
+user_interface =                "classic"
+colors_enabled =                "yes"
+main_window_color =             "default"
+current_item_prefix =           "$(red)$r"
+current_item_suffix =           "$/r$(end)"
+follow_now_playing_lyrics =     "yes"
+display_bitrate =               "yes"
+enable_window_title =           "yes"
+external_editor =               "nano"
+execute_on_song_change =        "~/.ncmpcpp/album.sh"
+playlist_disable_highlight_delay = 1
