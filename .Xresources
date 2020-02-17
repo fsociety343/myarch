@@ -46,6 +46,8 @@ URxvt.urlButton:                  1
 !*! GLOBAL
 *.foreground:                     #ffffff
 *.background:                     #141821
+
+!.!Transparency
 !*.background:                     rgba:0000/0000/0200/c800
 
 !*! BLACK
@@ -90,20 +92,21 @@ rofi.display-run:                 Run
 rofi.display-window:              Running Apps
 
 !-! Color                         'bg'   'fg'    'bgalt'  'hlbg' 'hlfg'
-rofi.color-window:                #141821,#141821,#141821
-rofi.color-normal:                #141821,#ffffff,#141821,#ec0050,#ffffff
-rofi.color-active:                #141821,#3498db,#141821,#141821,#ec0050
-rofi.color-urgent:                #141821,#8e44ad,#141821,#141821,#ec0050
+rofi.color-enabled:               true
+rofi.color-window:                argb:ef141821,argb:ef141821,argb:00141821
+rofi.color-normal:                argb:00141821,#ffffff,argb:00141821,#ec0050,#ffffff
+rofi.color-active:                argb:00141821,#3498db,argb:00141821,argb:00141821,#ec0050
+rofi.color-urgent:                argb:00141821,#8e44ad,argb:00141821,argb:00141821,#ec0050
 
 !-! Appearance
 rofi.sidebar-mode:                true
 rofi.terminal:                    urxvt
 rofi.font:                        M+ 1m 9
-rofi.bw:                          2
+rofi.bw:                          0
 rofi.lines:                       16
 rofi.columns:                     2
 rofi.location:                    0
-rofi.padding:                     20
+rofi.padding:                     24
 rofi.levenshtein-sort:            true
 rofi.case-sensitive:              false
 rofi.fuzzy:                       false
