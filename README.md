@@ -1,4 +1,6 @@
 ## Screenshots
+Just playing with colors - HP 14-G102AU
+
 ### Dark
 ![Desktop](Dark-Desktop.png)
 ![Apps](Dark-Apps.png)
