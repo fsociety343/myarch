@@ -1,0 +1,8 @@
+# GIMP gimp-text-tool options
+
+(foreground (color-rgb 0.90196078431372551 0.56470588235294117 0.92549019607843142))
+(palette "Default")
+(font "Tuesday Night")
+(font-size 75)
+
+# end of gimp-text-tool options

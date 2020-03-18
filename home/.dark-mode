@@ -1,0 +1,30 @@
+#!/bin/bash
+#Begin
+notify-send -u critical "set openbox and gtk themes adapted with icon on obconf and lxappearance"
+obconf
+lxappearance
+
+# Kill
+killall clipit
+killall polybar
+killall dunst
+
+# Load X Resources
+xrdb ~/.Xresources
+
+# Background Handler
+cp ~/.config/nitrogen/dark.cfg ~/.config/nitrogen/bg-saved.cfg
+nitrogen --restore
+
+# Panel/Taskbar
+polybar dark -r &
+clipit &
+
+# Notification
+dunst -conf ~/.config/dunst/dark &
+
+# Betterlockscreen
+betterlockscreen -u ~/Pictures/Wallpaper/T-Progressive/Girl-darkness.jpg &
+
+# Success
+notify-send "Dark Theme Applied"

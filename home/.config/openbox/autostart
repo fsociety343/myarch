@@ -1,0 +1,43 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+###################################################################
+# Default Dark
+# Load X Resources
+xrdb ~/.Xresources
+
+# Background Handler
+cp ~/.config/nitrogen/dark.cfg ~/.config/nitrogen/bg-saved.cfg
+nitrogen --restore
+
+# Compositor
+compton --blur-method kawase --blur-strength 1 &
+
+# Panel/Taskbar
+#plank &
+polybar dark -r &
+
+# Notification
+dunst -conf ~/.config/dunst/dark &
+
+# Power Manager
+xfce4-power-manager &
+
+# Policy Kit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Lock Screen Handler
+xss-lock -- /usr/bin/betterlockscreen &
+
+# Betterlockscreen
+betterlockscreen -u ~/Pictures/Wallpaper/T-Progressive/Girl-darkness.jpg &
+
+# Tray/Applets
+clipit &
+#nm-applet &
+#blueman-applet &
+
+# Others
+mpd

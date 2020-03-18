@@ -1,0 +1,546 @@
+;;; OWL4CE
+
+[colors]
+bg = #ffffff
+bg-alt = #cf8ef4
+fg = #4a515a
+fg-alt = #ffa6f7
+
+dark-bg = #2c313b
+dark-bg-alt = #a6b5f0
+dark-fg = #ffffff
+dark-fg-alt = #e690ec
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Light Settings
+;; BAR
+[bar/light]
+width = 100%
+height = 26
+background = ${colors.bg}
+foreground = ${colors.fg}
+line-size = 2
+;bottom = true
+;offset-x = 1%
+;offset-y = 1%
+
+;; Floated Panel
+;radius = 4.0
+;border-size = 2
+;border-color = ${colors.dark-bg}
+
+padding-left = 1
+;padding-right = 0
+;module-margin-left = 0
+;module-margin-right = 0
+fixed-center = true
+
+;; FONT Priority
+font-0 = M+ 1m:style=Regular:size=8;2
+font-1 = FontAwesome5Free:style=Solid:size=9;2
+font-2 = FontAwesome5Free:style=Regular:size=9;2
+font-3 = FontAwesome5Brands:style=Regular:size=11;3
+
+;; FOR FIXED
+font-4 = FontAwesome5Brands:style=Regular:size=10;2
+font-5 = M+ 1m:style=Bold:size=8;2
+font-6 = FontAwesome5Free:style=Solid:size=7;1
+
+modules-left = icon title fm edit about
+modules-center = ewmh
+modules-right = lock mpd wlan vol temp tgdesk batt date find list
+
+tray-position = right
+tray-padding = 2
+;tray-detached = true
+;tray-offset-x = -435
+;tray-maxsize = 16
+;tray-dark-bg =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+
+icon-default = %{T7}
+
+format = <label-state>
+label-active = %icon%
+label-active-foreground = ${colors.bg-alt}
+label-active-padding = 1
+
+label-urgent = 
+;label-urgent-padding = 1
+
+label-empty = %icon%
+label-empty-foreground = ${colors.fg-alt}
+label-empty-padding = 1
+
+[module/icon]
+type = custom/text
+content = ""
+content-foreground = ${colors.bg-alt}
+content-underline = ${colors.bg-alt}
+content-padding = 2
+
+click-left = notify-send "  Nice Try" -u low
+click-middle = notify-send "  You're the King" -u critical
+click-right = notify-send "  Hard Work" -u normal
+
+[module/title]
+type = internal/xwindow
+
+format = %{T6}<label>
+format-padding = 2
+
+label = %title%
+label-maxlen = 40
+
+label-empty = Desktop
+;label-empty-dark-fg = ${colors.dark-fg-alt}
+
+[module/fm]
+type = custom/text
+content = "File"
+content-padding = 1
+
+click-left = thunar
+click-right = notify-send "Left click to open file man " -u low
+
+[module/edit]
+type = custom/text
+content = "Edit"
+content-padding = 1
+
+click-left = geany
+click-right = notify-send "Left click to open text editor " -u low
+
+[module/about]
+type = custom/text
+content = "About"
+content-padding = 1
+
+click-left = urxvt -hold -e neofetch
+click-right = notify-send "Left click to fetch " -u low
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+
+format-online = <toggle>
+format-online-foreground = ${colors.bg-alt}
+format-online-padding = 1
+
+icon-prev = 
+icon-play = 
+icon-pause = %{T5}
+icon-next = 
+
+label-song = " %artist% - %title%"
+label-song-dark-fg = ${colors.fg-alt}
+label-song-maxlen = 65
+label-song-ellipsis = true
+
+[module/tgdesk]
+type = custom/text
+content = ""
+content-foreground = ${colors.bg-alt}
+content-padding = 1
+
+click-left = ~/.config/polybar/toggledesktop
+
+[module/lock]
+type = custom/text
+content = ""
+content-foreground = ${colors.bg-alt}
+content-padding = 1
+
+click-left = betterlockscreen -l dimblur
+
+[module/wlan]
+type = internal/network
+interval = 3.0
+unknown-as-up = true
+interface = wlan0
+
+label-connected = %{A1:networkmanager_dmenu:}%{A}
+label-connected-underline = ${colors.bg-alt}
+label-connected-foreground = ${colors.bg-alt}
+label-connected-padding = 1
+
+label-disconnected = %{A1:networkmanager_dmenu:}%{A}
+label-disconnected-foreground = ${colors.bg-alt}
+label-disconnected-padding = 1
+
+[module/vol]
+type = internal/alsa
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-foreground = ${colors.bg-alt}
+format-volume-padding = 1
+format-muted-padding = 1
+label-volume = %percentage%
+label-muted =  --
+label-muted-foreground = ${colors.fg-alt}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-headphones = 
+
+[module/temp]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:01.0/hwmon/hwmon5/temp1_input
+base-temperature = 45
+warn-temperature = 65
+
+format = <ramp> <label>
+format-foreground = ${colors.bg-alt}
+format-warn = <ramp> <label-warn>
+format-warn-foreground = ${colors.bg-alt}
+format-padding = 1
+format-warn-padding = 1
+
+label = %temperature-c%
+label-warn = %temperature-c%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+ramp-2-dark-fg = #efec0050
+
+[module/batt]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 100
+
+format-charging = <animation-charging>
+format-charging-foreground = ${colors.bg-alt}
+format-charging-padding = 1
+format-discharging = <ramp-capacity>
+format-discharging-foreground = ${colors.bg-alt}
+format-discharging-padding = 1
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 500
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = "%a"
+date-alt = "%A, %d %B %Y"
+
+time = "%R"
+time-alt = "%R"
+
+label = %date% @ %time%
+label-underline = ${colors.bg-alt}
+label-padding = 1
+label-margin = 1
+
+[module/find]
+type = custom/text
+content = ""
+content-foreground = ${colors.bg-alt}
+content-padding = 1
+
+click-left = rofi -show drun -show-icons
+click-right = notify-send "Left click to search apps "
+
+[module/list]
+type = custom/text
+content = ""
+content-foreground = ${colors.bg-alt}
+content-padding = 1
+
+click-left = rofi -show window
+click-right = notify-send "Left click to show run apps "
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Dark Settings
+;; BAR
+[bar/dark]
+width = 100%
+height = 26
+background = ${colors.dark-bg}
+foreground = ${colors.dark-fg}
+line-size = 2
+;bottom = true
+;offset-x = 1%
+;offset-y = 1%
+
+;; Floated Panel
+;radius = 4.0
+;border-size = 2
+;border-color = ${colors.dark-bg}
+
+padding-left = 1
+;padding-right = 0
+;module-margin-left = 0
+;module-margin-right = 0
+fixed-center = true
+
+;; FONT Priority
+font-0 = M+ 1m:style=Regular:size=8;2
+font-1 = FontAwesome5Free:style=Solid:size=9;2
+font-2 = FontAwesome5Free:style=Regular:size=9;2
+font-3 = FontAwesome5Brands:style=Regular:size=11;3
+
+;; FOR FIXED
+font-4 = FontAwesome5Brands:style=Regular:size=10;2
+font-5 = M+ 1m:style=Bold:size=8;2
+font-6 = FontAwesome5Free:style=Solid:size=7;1
+
+modules-left = icon-dark title-dark fm-dark edit-dark about-dark
+modules-center = ewmh-dark
+modules-right = lock-dark mpd-dark wlan-dark vol-dark temp-dark tgdesk-dark batt-dark date-dark find-dark list-dark
+
+tray-position = right
+tray-padding = 2
+;tray-detached = true
+;tray-offset-x = -435
+;tray-maxsize = 16
+;tray-dark-bg =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/ewmh-dark]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+
+icon-default = %{T7}
+
+format = <label-state>
+label-active = %icon%
+label-active-foreground = ${colors.dark-bg-alt}
+label-active-padding = 1
+
+label-urgent = 
+;label-urgent-padding = 1
+
+label-empty = %icon%
+label-empty-foreground = ${colors.dark-fg-alt}
+label-empty-padding = 1
+
+[module/icon-dark]
+type = custom/text
+content = ""
+content-foreground = ${colors.dark-bg-alt}
+content-underline = ${colors.dark-bg-alt}
+content-padding = 2
+
+click-left = notify-send "  Nice Try" -u low
+click-middle = notify-send "  You're the King" -u critical
+click-right = notify-send "  Hard Work" -u normal
+
+[module/title-dark]
+type = internal/xwindow
+
+format = %{T6}<label>
+format-padding = 2
+
+label = %title%
+label-maxlen = 40
+
+label-empty = Desktop
+;label-empty-dark-fg = ${colors.dark-fg-alt}
+
+[module/fm-dark]
+type = custom/text
+content = "File"
+content-padding = 1
+
+click-left = thunar
+click-right = notify-send "Left click to open file man " -u low
+
+[module/edit-dark]
+type = custom/text
+content = "Edit"
+content-padding = 1
+
+click-left = geany
+click-right = notify-send "Left click to open text editor " -u low
+
+[module/about-dark]
+type = custom/text
+content = "About"
+content-padding = 1
+
+click-left = urxvt -hold -e neofetch
+click-right = notify-send "Left click to fetch " -u low
+
+[module/mpd-dark]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+
+format-online = <toggle>
+format-online-foreground = ${colors.dark-bg-alt}
+format-online-padding = 1
+
+icon-prev = 
+icon-play = 
+icon-pause = %{T5}
+icon-next = 
+
+label-song = " %artist% - %title%"
+label-song-dark-fg = ${colors.dark-fg-alt}
+label-song-maxlen = 65
+label-song-ellipsis = true
+
+[module/tgdesk-dark]
+type = custom/text
+content = ""
+content-foreground = ${colors.dark-bg-alt}
+content-padding = 1
+
+click-left = ~/.config/polybar/toggledesktop
+
+[module/lock-dark]
+type = custom/text
+content = ""
+content-foreground = ${colors.dark-bg-alt}
+content-padding = 1
+
+click-left = betterlockscreen -l dimblur
+
+[module/wlan-dark]
+type = internal/network
+interval = 3.0
+unknown-as-up = true
+interface = wlan0
+
+label-connected = %{A1:networkmanager_dmenu:}%{A}
+label-connected-foreground = ${colors.dark-bg-alt}
+label-connected-underline = ${colors.dark-bg-alt}
+label-connected-padding = 1
+
+label-disconnected = %{A1:networkmanager_dmenu:}%{A}
+label-disconnected-foreground = ${colors.dark-bg-alt}
+label-disconnected-padding = 1
+
+[module/vol-dark]
+type = internal/alsa
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-foreground = ${colors.dark-bg-alt}
+format-volume-padding = 1
+format-muted-padding = 1
+label-volume = %percentage%
+label-muted =  --
+label-muted-foreground = ${colors.dark-fg-alt}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-headphones = 
+
+[module/temp-dark]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/pci0000:00/0000:00:01.0/hwmon/hwmon5/temp1_input
+base-temperature = 45
+warn-temperature = 65
+
+format = <ramp> <label>
+format-foreground = ${colors.dark-bg-alt}
+format-warn = <ramp> <label-warn>
+format-warn-foreground = ${colors.dark-bg-alt}
+format-padding = 1
+format-warn-padding = 1
+
+label = %temperature-c%
+label-warn = %temperature-c%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+ramp-2-dark-fg = #efec0050
+
+[module/batt-dark]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 100
+
+format-charging = <animation-charging>
+format-charging-foreground = ${colors.dark-bg-alt}
+format-charging-padding = 1
+format-discharging = <ramp-capacity>
+format-discharging-foreground = ${colors.dark-bg-alt}
+format-discharging-padding = 1
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 500
+
+[module/date-dark]
+type = internal/date
+interval = 1.0
+
+date = "%a"
+date-alt = "%A, %d %B %Y"
+
+time = "%R"
+time-alt = "%R"
+
+label = %date% @ %time%
+label-underline = ${colors.dark-bg-alt}
+label-padding = 1
+label-margin = 1
+
+[module/find-dark]
+type = custom/text
+content = ""
+content-foreground = ${colors.dark-bg-alt}
+content-padding = 1
+
+click-left = rofi -show drun -show-icons
+click-right = notify-send "Left click to search apps "
+
+[module/list-dark]
+type = custom/text
+content = ""
+content-foreground = ${colors.dark-bg-alt}
+content-padding = 1
+
+click-left = rofi -show window
+click-right = notify-send "Left click to show run apps "
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[settings]
+screenchange-reload = true

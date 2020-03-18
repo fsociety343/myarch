@@ -1,0 +1,120 @@
+!@! OWL4CE
+!Dark
+
+!#! URxvt Configuration
+!-! Appearance
+URxvt.font:                       xft:M+ 1m for Powerline:size=9
+URxvt.geometry:                   86x19
+URxvt.internalBorder:             20
+URxvt.cursorBlink:                true
+URxvt.cursorUnderline:            true
+URxvt.saveline:                   4096
+URxvt.scrollBar:                  false
+URxvt.scrollBar_right:            true
+URxvt.urgentOnBell:               false
+URxvt.depth:                      24
+URxvt.iso14755:                   false
+
+!-! Extension
+URxvt.perl-ext-common:            default,clipboard,keyboard-select,url-select,tabbedex
+
+!-! Tabbedex
+URxvt.tabbedex.new-button:        false
+URXvt.tabbedex.reopen-on-close:   yes
+URxvt.tabbedex.autohide:          true
+URxvt.tabbedex.tabbar-fg:         1
+URxvt.tabbedex.tabbar-bg:         0
+URxvt.tabbedex.tab-fg:            7
+URxvt.tabbedex.tab-bg:            1
+URxvt.keysym.Control-Shift-T:     perl:tabbedex:new_tab
+URxvt.keysym.Control-Shift-R:     perl:tabbedex:rename_tab
+URxvt.keysym.Control-Shift-W:     perl:tabbedex:kill_tab
+URxvt.keysym.Control-Next:        perl:tabbedex:next_tab
+URxvt.keysym.Control-Prior:       perl:tabbedex:prev_tab
+
+!-! Clipboard
+URxvt.clipboard.copycmd:          xclip -i -selection clipboard
+URxvt.clipboard.pastecmd:         xclip -o -selection clipboard
+URxvt.keysym.M-c:                 perl:clipboard:copy
+URxvt.keysym.M-v:                 perl:clipboard:paste
+URxvt.keysym.M-Escape:            perl:keyboard-select:activate
+URxvt.keysym.M-s:                 perl:keyboard-select:search
+URxvt.urlLauncher:                google-chrome-stable
+URxvt.underlineURLs:              true
+URxvt.urlButton:                  1
+
+!-! Color Scheme
+!*! GLOBAL
+*.foreground:                     #ffffff
+*.background:                     #2c313b
+
+!.!Transparency
+!*.background:                     rgba:0000/0000/0200/c800
+
+!*! BLACK
+*.color0: #2c313b
+*.color8: #4a515a
+
+!*! RED
+*.color1: #fd94b0
+*.color9: #fbaac0
+
+!*! GREEN
+*.color2: #8cffd6
+*.color10: #b9ffe6
+
+!*! YELLOW
+*.color3: #fffd7c
+*.color11: #fffd90
+
+!*! BLUE
+*.color4: #a6b5f0
+*.color12: #bdcbff
+
+!*! MAGENTA
+*.color5: #cf8ef4
+*.color13: #e690ec
+
+!*! CYAN
+*.color6: #94e3ec
+*.color14: #b2f1f8
+
+!*! WHITE
+*.color7: #ffffff
+*.color15: #ededed
+
+!#! ROFI Configuration
+!Dark
+rofi.modi:                        drun
+
+!-! Menu Display
+rofi.display-calc:                Calculator
+rofi.display-drun:                Applications
+rofi.display-run:                 Run
+rofi.display-window:              Running Apps
+
+!-! Color                         'bg'   'fg'    'bgalt'  'hlbg' 'hlfg'
+rofi.color-enabled:               true
+rofi.color-window:                argb:ef2c313b,argb:002c313b,argb:002c313b
+rofi.color-normal:                argb:002c313b,#c4c4c4,argb:002c313b,#e690ec,#2c313b
+rofi.color-active:                argb:002c313b,#00c7eb,argb:002c313b,#e690ec,#2c313b
+rofi.color-urgent:                argb:002c313b,#8e44ad,argb:002c313b,#e690ec,#2c313b
+
+!-! Appearance
+!rofi.fixed-num-lines:             false
+rofi.sidebar-mode:                false
+rofi.terminal:                    urxvt
+rofi.font:                        M+ 1m 9
+rofi.bw:                          1
+rofi.lines:                       16
+rofi.columns:                     2
+rofi.location:                    0
+rofi.padding:                     20
+rofi.levenshtein-sort:            true
+rofi.case-sensitive:              false
+rofi.fuzzy:                       false
+rofi.line-margin:                 2
+rofi.separator-style:             solid
+rofi.hide-scrollbar:              true
+rofi.markup-rows:                 false
+rofi.disable-history:             true

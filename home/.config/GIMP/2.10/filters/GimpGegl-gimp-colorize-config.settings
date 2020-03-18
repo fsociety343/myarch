@@ -1,0 +1,64 @@
+# settings
+
+(GimpGegl-gimp-colorize-config "2020-03-18 21:28:23"
+    (time 1584541703)
+    (hue 0.067204301075268799)
+    (saturation 1)
+    (lightness 0.75686274509803919)
+    (color (color-rgb 1 0.85490196078431369 0.75686274509803919)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:27:58"
+    (time 1584541678)
+    (hue 0.44025157232704409)
+    (saturation 0.55789473684210489)
+    (lightness 0.62745098039215685)
+    (color (color-rgb 0.70980392156862748 0.91764705882352937 0.84313725490196079)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:27:23"
+    (time 1584541643)
+    (hue 0.6333333333333333)
+    (saturation 0.4545454545454542)
+    (lightness 0.69803921568627447)
+    (color (color-rgb 0.7803921568627451 0.80784313725490198 0.91764705882352937)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:25:58"
+    (time 1584541558)
+    (hue 0.91874999999999996)
+    (saturation 1)
+    (lightness 0.68627450980392157)
+    (color (color-rgb 1 0.68627450980392157 0.83921568627450982)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:25:39"
+    (time 1584541539)
+    (hue 0.848314606741573)
+    (saturation 1)
+    (lightness 0.65098039215686265)
+    (color (color-rgb 1 0.65098039215686276 0.96862745098039216)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:25:23"
+    (time 1584541523)
+    (hue 0.8492063492063493)
+    (saturation 0.96330275229357809)
+    (lightness 0.57254901960784332)
+    (color (color-rgb 0.99215686274509807 0.58039215686274515 0.95294117647058818)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:24:51"
+    (time 1584541491)
+    (hue 0.77287581699346397)
+    (saturation 0.8225806451612907)
+    (lightness 0.51372549019607838)
+    (color (color-rgb 0.81176470588235294 0.55686274509803924 0.95686274509803926)))
+(GimpGegl-gimp-colorize-config "2020-03-18 21:24:36"
+    (time 1584541476)
+    (hue 0.82246376811594202)
+    (saturation 0.70769230769230784)
+    (lightness 0.49019607843137258)
+    (color (color-rgb 0.90196078431372551 0.56470588235294117 0.92549019607843142)))
+(GimpGegl-gimp-colorize-config "2020-03-18 20:45:48"
+    (time 1584539148)
+    (hue 0.5)
+    (saturation 0)
+    (lightness 1)
+    (color (color-rgb 1 1 1)))
+(GimpGegl-gimp-colorize-config "2020-03-18 20:43:45"
+    (time 1584539025)
+    (hue 0.59375000000000011)
+    (saturation 0.097560975609756087)
+    (lightness -0.35686274509803917)
+    (color (color-rgb 0.29019607843137257 0.31764705882352939 0.35294117647058826)))
+
+# end of settings
