@@ -61,7 +61,6 @@
     (padding-color (color-rgb 0.14901960784313725 0.19607843137254902 0.2196078431372549))
     (padding-in-show-all no))
 (theme "System")
-(icon-theme "Symbolic-Inverted")
 (icon-size small)
 (layer-new-name "New Layer")
 (fill-options

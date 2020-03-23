@@ -1,4 +1,5 @@
-# configuration file for betterlockscreen
+# Configuration file for betterlockscreen
+# Dark Mode
 insidecolor=00000000
 ringcolor=ffffffff
 keyhlcolor=ec0050ff
@@ -11,6 +12,6 @@ ringwrongcolor=ffffffff
 verifcolor=ffffffff
 timecolor=ffffffff
 datecolor=ffffffff
-loginbox=00000077
+loginbox=2c313bef
 font="sans-serif"
 locktext='^-^ Locked'

@@ -7,3 +7,5 @@ if [[ "${current_mode##* }" == ON ]]; then
 else
     wmctrl -k on
 fi
+
+# OWL4CE

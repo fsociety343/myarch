@@ -1,5 +1,5 @@
 !@! OWL4CE
-!Dark
+! Dark Mode
 
 !#! URxvt Configuration
 !-! Appearance
@@ -84,7 +84,6 @@ URxvt.urlButton:                  1
 *.color15: #ededed
 
 !#! ROFI Configuration
-!Dark
 rofi.modi:                        drun
 
 !-! Menu Display

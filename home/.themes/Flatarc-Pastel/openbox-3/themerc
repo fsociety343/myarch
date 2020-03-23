@@ -103,7 +103,7 @@ menu.overlap.y: 0
 menu.border.color: #ffffff
 menu.separator.color: #ffffff
 
-menu.title.text.color: #2c313b
+menu.title.text.color: #ffffff
 menu.items.text.color: #4a515a
 menu.items.disabled.text.color: #d5d5d5
 menu.items.active.text.color: #ffffff

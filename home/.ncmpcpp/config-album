@@ -1,5 +1,3 @@
-# OWL4CE
-
 [mpd]
 mpd_music_dir =                 "~/Music"
 mpd_host =                      "localhost"
@@ -49,5 +47,6 @@ follow_now_playing_lyrics =     "yes"
 display_bitrate =               "yes"
 enable_window_title =           "yes"
 external_editor =               "nano"
-execute_on_song_change =        "~/.ncmpcpp/album.sh"
+execute_on_song_change =        "~/.ncmpcpp/album"
 playlist_disable_highlight_delay = 1
+# OWL4CE

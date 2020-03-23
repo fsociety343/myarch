@@ -58,8 +58,8 @@ our $SCHEMA = [
     {sep => 'SESSIONS'},
     
     {beg  => ["Switch Theme", "applications-graphics"]},
-    {item => ['bash ~/.dark-mode','Dark Mode']},
-    {item => ['bash ~/.light-mode','Light Mode']},
+    {item => ['bash ~/.dark-mode &','Dark Mode']},
+    {item => ['bash ~/.light-mode &','Light Mode']},
     {end  => undef},
 
     {raw  => q(<item label="Refresh" icon="/home/ryk/.config/obmenu-generator/icons/4778abdbe896daece3cdf6700abc1fd7.png">
@@ -111,7 +111,7 @@ our $SCHEMA = [
     
     {item => ['slimlock', 'SLiM Lock', 'system-lock-screen']},
     {item => ['i3lock-fancy -f reckoner', 'i3 Lock Fancy', 'system-lock-screen']},
-    {item => ['betterlockscreen -l dimblur', 'Betterlockscreen', 'system-lock-screen']},
+    {item => ['betterlockscreen -l blur', 'Betterlockscreen', 'system-lock-screen']},
     
     {end  => undef},
     

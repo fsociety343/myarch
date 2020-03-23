@@ -1,0 +1,17 @@
+# Configuration file for betterlockscreen
+# Light Mode
+insidecolor=00000000
+ringcolor=2c313bff
+keyhlcolor=ec0050ff
+bshlcolor=ec0050ff
+separatorcolor=00000000
+insidevercolor=00000000
+insidewrongcolor=ec0050ff
+ringvercolor=2c313bff
+ringwrongcolor=2c313bff
+verifcolor=2c313bff
+timecolor=2c313bff
+datecolor=2c313bff
+loginbox=ffffffef
+font="sans-serif"
+locktext='^-^ Locked'

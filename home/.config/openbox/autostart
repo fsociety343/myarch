@@ -4,19 +4,23 @@
 # to run user-specific things.
 #
 ###################################################################
-# Default Dark
-# Load X Resources
-xrdb ~/.Xresources
+# Default Dark Theme
 
 # Background Handler
 cp ~/.config/nitrogen/dark.cfg ~/.config/nitrogen/bg-saved.cfg
 nitrogen --restore
 
+# Betterlockscreen
+cp ~/.config/betterlockscreenrc-dark ~/.config/betterlockscreenrc
+betterlockscreen -u ~/Pictures/Wallpaper/Girl-darkness.jpg &
+
+# Load X Resources
+xrdb ~/.Xresources
+
 # Compositor
 compton --blur-method kawase --blur-strength 1 &
 
 # Panel/Taskbar
-#plank &
 polybar dark -r &
 
 # Notification
@@ -31,13 +35,10 @@ xfce4-power-manager &
 # Lock Screen Handler
 xss-lock -- /usr/bin/betterlockscreen &
 
-# Betterlockscreen
-betterlockscreen -u ~/Pictures/Wallpaper/T-Progressive/Girl-darkness.jpg &
-
 # Tray/Applets
 clipit &
 #nm-applet &
 #blueman-applet &
 
-# Others
+# Others (ex:music)
 mpd

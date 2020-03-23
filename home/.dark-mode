@@ -1,13 +1,24 @@
 #!/bin/bash
-#Begin
-notify-send -u critical "set openbox and gtk themes adapted with icon on obconf and lxappearance"
-obconf
-lxappearance
 
-# Kill
+# Betterlockscreen First
+cp ~/.config/betterlockscreenrc-dark ~/.config/betterlockscreenrc
+betterlockscreen -u ~/Pictures/Wallpaper/Girl-darkness.jpg &
+
+# Kill Before
 killall clipit
 killall polybar
 killall dunst
+
+# Openbox & GTK Theme
+# gtk2 - gtk3
+sed -i 's_gtk-theme-name="Adapta-Pink-Eta"_gtk-theme-name="Adapta-Pink-Nokto-Eta"_' ~/.gtkrc-2.0
+sed -i 's_gtk-theme-name=Adapta-Pink-Eta_gtk-theme-name=Adapta-Pink-Nokto-Eta_' ~/.config/gtk-3.0/settings.ini
+# icon
+sed -i 's_gtk-icon-theme-name="Papirus-Light"_gtk-icon-theme-name="Papirus-Dark"_' /.gtkrc-2.0
+sed -i 's_gtk-icon-theme-name=Papirus-Light_gtk-icon-theme-name=Papirus-Dark_' ~/.config/gtk-3.0/settings.ini
+# openbox
+sed -i 's_<name>Flatarc-Pastel</name>_<name>Flatarc</name>_' ~/.config/openbox/rc.xml
+openbox --restart
 
 # Load X Resources
 xrdb ~/.Xresources
@@ -16,15 +27,14 @@ xrdb ~/.Xresources
 cp ~/.config/nitrogen/dark.cfg ~/.config/nitrogen/bg-saved.cfg
 nitrogen --restore
 
-# Panel/Taskbar
+# Panel & Tray
 polybar dark -r &
 clipit &
 
-# Notification
+# Notification Daemon
 dunst -conf ~/.config/dunst/dark &
 
-# Betterlockscreen
-betterlockscreen -u ~/Pictures/Wallpaper/T-Progressive/Girl-darkness.jpg &
-
 # Success
-notify-send "Dark Theme Applied"
+notify-send " Dark Theme Applied"
+
+# OWL4CE

@@ -7,7 +7,7 @@ fg = #4a515a
 fg-alt = #ffa6f7
 
 dark-bg = #2c313b
-dark-bg-alt = #a6b5f0
+dark-bg-alt = #93a4b3
 dark-fg = #ffffff
 dark-fg-alt = #e690ec
 
@@ -108,7 +108,7 @@ type = custom/text
 content = "File"
 content-padding = 1
 
-click-left = thunar
+click-left = thunar &
 click-right = notify-send "Left click to open file man " -u low
 
 [module/edit]
@@ -116,7 +116,7 @@ type = custom/text
 content = "Edit"
 content-padding = 1
 
-click-left = geany
+click-left = geany &
 click-right = notify-send "Left click to open text editor " -u low
 
 [module/about]
@@ -124,7 +124,7 @@ type = custom/text
 content = "About"
 content-padding = 1
 
-click-left = urxvt -hold -e neofetch
+click-left = urxvt -hold -e neofetch &
 click-right = notify-send "Left click to fetch " -u low
 
 [module/mpd]
@@ -160,7 +160,7 @@ content = ""
 content-foreground = ${colors.bg-alt}
 content-padding = 1
 
-click-left = betterlockscreen -l dimblur
+click-left = betterlockscreen -l blur
 
 [module/wlan]
 type = internal/network
@@ -335,7 +335,7 @@ icon-default = %{T7}
 
 format = <label-state>
 label-active = %icon%
-label-active-foreground = ${colors.dark-bg-alt}
+label-active-foreground = #a6b5f0
 label-active-padding = 1
 
 label-urgent = 
@@ -373,7 +373,7 @@ type = custom/text
 content = "File"
 content-padding = 1
 
-click-left = thunar
+click-left = thunar &
 click-right = notify-send "Left click to open file man " -u low
 
 [module/edit-dark]
@@ -381,7 +381,7 @@ type = custom/text
 content = "Edit"
 content-padding = 1
 
-click-left = geany
+click-left = geany &
 click-right = notify-send "Left click to open text editor " -u low
 
 [module/about-dark]
@@ -389,7 +389,7 @@ type = custom/text
 content = "About"
 content-padding = 1
 
-click-left = urxvt -hold -e neofetch
+click-left = urxvt -hold -e neofetch &
 click-right = notify-send "Left click to fetch " -u low
 
 [module/mpd-dark]
@@ -425,7 +425,7 @@ content = ""
 content-foreground = ${colors.dark-bg-alt}
 content-padding = 1
 
-click-left = betterlockscreen -l dimblur
+click-left = betterlockscreen -l blur
 
 [module/wlan-dark]
 type = internal/network
